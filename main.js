@@ -20,7 +20,7 @@ console.log(personaInfo)
 
 // ถ้าหากไม่ assign ค่าให้ตัวแปลที่สร้าง ตัวแปลนั้นจะมี type เป็น undefined เสมอ
 // let b
-// if (b===undefined) {
+// if (b===undefined) { //เครื่องหมายเท่ากับ 2 อัน = เช็คแค่ content ไม่สน type, เครื่องหมายเท่ากับ 3 อัน = เช็คทั้ง content และ type ของค่าของตัวแปล ต้องเหมือนกัน
 //     console.log('variable is undefined') //result
 //     return undefined
 // } else{
@@ -29,7 +29,7 @@ console.log(personaInfo)
 // }
 
 // กรณี assign ค่าให้ตัวแปล และเช็คด้วย if else โดยให้ return เป็นตัวแปล และ print ออกมาเป็น type of ของตัวแปล โดยใช้ backtick เพื่อให้ใส่ค่าของตัวแปลลงไปใน print ได้
-let a=null
+let a=true
 if (a===undefined) {
     console.log('variable is undefined')
     return undefined
