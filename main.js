@@ -19,11 +19,21 @@ personaInfo[personaInfo.length-1]=20 //element ตัวสุดท้ายใ
 console.log(personaInfo)    
 
 // ถ้าหากไม่ assign ค่าให้ตัวแปลที่สร้าง ตัวแปลนั้นจะมี type เป็น undefined เสมอ
-let a=20
-if (a==undefined) {
+// let b
+// if (b===undefined) {
+//     console.log('variable is undefined') //result
+//     return undefined
+// } else{
+//     console.log(typeof b)
+//     return b
+// }
+
+// กรณี assign ค่าให้ตัวแปล และเช็คด้วย if else โดยให้ return เป็นตัวแปล และ print ออกมาเป็น type of ของตัวแปล โดยใช้ backtick เพื่อให้ใส่ค่าของตัวแปลลงไปใน print ได้
+let a=null
+if (a===undefined) {
     console.log('variable is undefined')
     return undefined
 } else{
-    console.log(typeof a)
+    console.log(`variable is ${typeof a}`) //result
     return a
 }
