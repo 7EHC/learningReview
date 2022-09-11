@@ -29,11 +29,36 @@ console.log(personaInfo)
 // }
 
 // กรณี assign ค่าให้ตัวแปล และเช็คด้วย if else โดยให้ return เป็นตัวแปล และ print ออกมาเป็น type of ของตัวแปล โดยใช้ backtick เพื่อให้ใส่ค่าของตัวแปลลงไปใน print ได้
-let a=true
-if (a===undefined) {
-    console.log('variable is undefined')
-    return undefined
-} else{
-    console.log(`variable is ${typeof a}`) //result
-    return a
+// let a=true
+// if (a===undefined) {
+//     console.log('variable is undefined')
+//     return undefined
+// } else{
+//     console.log(`variable is ${typeof a}`) //result
+//     return a
+// }
+
+// ตัวแปล const ไม่สามารถเปลี่ยนแปลงค่าได้
+
+// for (const num = 1; num <=5; num++) { //มี ++ เป็นตัวที่จะเปลี่ยนแปลงค่า
+//     console.log(num)
+// }
+
+// declaration ของ num เป็น blockscope{} console.log ที่อยู่นอก blockscope{} จึงไม่สามารถรันได้
+// for (let num = 1; num <=5; num++){
+//     console.log(num)
+// }
+// console.log(num)
+
+// เนื่องจากย้าย let num มาอยู่ด้านนอกกับ console.log จึงสามารถรันได้
+let num
+for (num = 1; num <=5; num++){
+    console.log(num)
 }
+console.log(num)
+
+// declaration ของ num กลายเป็น var เนื่องจาก var เป็น default หากไม่กำหนดตัวแปล(var เข้าถึงได้ทุกที่)
+for (num = 1; num <=5; num++){
+    console.log(num)
+}
+console.log(num)
