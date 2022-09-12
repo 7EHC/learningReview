@@ -62,3 +62,21 @@ for (num = 1; num <=5; num++){
     console.log(num)
 }
 console.log(num)
+
+console.log('----------')
+console.log(Number('10')) //String - to number = 10
+console.log(Number('')) //empty string - to number = 0
+console.log(Number('two')) //Input String to numebr - to number = NaN (Not a number)
+console.log(Number(undefined)) //input undefined to number - to number = NaN
+console.log(Number(null)) //input null to number - to number = 0
+console.log('----------')
+console.log(String('one')) //non empty string - return string
+console.log(String('')) //empty string - return empty string
+console.log(String(-0)) //input -0 to string - to string = 0
+console.log('----------')
+console.log(Boolean(undefined)) //input undefined to boolean - to boolean = false
+console.log(Boolean(null)) //input null to boolean - to boolean = false
+console.log(Boolean('')) //empty string - to boolean = false
+console.log(Boolean(3)) //non empty, numeric - to boolean = true
+console.log(Boolean('three')) //input non empty, non numeric to boolean - to boolean = true
+console.log(Boolean(0)) //input 0 or -0 to boolean - to boolean = false
