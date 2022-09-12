@@ -140,3 +140,61 @@ for (const prop in info) {
     console.log(prop) //อ้างถึง property key
     console.log(info[prop]) //อ้างถึง property value
 }
+
+console.log('----------')
+//object
+let student1={fisrtname: 'Prayfa', age: 20} //เก็บ value เป็น memory address
+let student2={firstname: 'Purin', age: 19}
+console.log(student1 === student2) //ได้ false เนื่องจากมันไม่ได้เปรียบเทียบกันที่ตัว value ใน property แต่มันเปรียบเทียบที่ Address location
+
+console.log('----------')
+//array
+let arr1=[1,2,3,4,5] //เก็บ value เป็น memory address
+let arr2=[1,2,3,4,5]
+console.log(arr1 === arr2) //ได้ false เนื่องจากมันไม่ได้เปรียบเทียบกันที่ตัว value ใน property แต่มันเปรียบเทียบที่ Address location
+
+console.log('----------')
+//primitive (เปรียบเทียบ value)
+let num1 = 1
+let num2 = 3 
+let num3 = 1
+console.log(num1 === num3) //true 
+console.log(num1 === num2) //false 
+
+console.log('----------')
+let students=1
+let grade
+switch (students) {
+    case 1: grade = 'A'
+        
+        //break;
+    case 2: grade = 'B'
+
+        //break;
+    case 3: grade = 'C'
+
+       //break;
+
+    default: grade = 'F'
+}
+console.log(grade)
+
+console.log('----------')
+function isEvenNumber(num) {
+    if (num%2===0) {
+        return true
+    } 
+    else {
+        return false   
+    }
+}
+console.log(isEvenNumber(101))
+console.log(isEvenNumber(100))
+console.log(isEvenNumber(15151215020021))
+
+// //example
+// function isEvenNumber(num) {
+//     return num%2===0?true:false
+// }
+// console.log(isEvenNumber(2))
+// console.log(isEvenNumber(7))
