@@ -199,4 +199,3 @@ console.log(isEvenNumber(15151215020021))
 // console.log(isEvenNumber(2))
 // console.log(isEvenNumber(7))
  
-//copy
