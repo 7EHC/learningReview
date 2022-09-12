@@ -80,3 +80,27 @@ console.log(Boolean('')) //empty string - to boolean = false
 console.log(Boolean(3)) //non empty, numeric - to boolean = true
 console.log(Boolean('three')) //input non empty, non numeric to boolean - to boolean = true
 console.log(Boolean(0)) //input 0 or -0 to boolean - to boolean = false
+
+console.log('----------')
+isEmpty = false
+let x = isEmpty? 1 /*true*/ : 0 /*false*/
+console.log(x)
+
+console.log('----------')
+isEmpty = true
+let y = isEmpty? 1 /*true*/ : 0 /*false*/
+console.log(y)
+
+let result = 5 ? 'count <= 5' : 'count > 5'
+console.log(result)
+
+console.log(`5 < '10' && '1' > 5 is ${5 < '10' && '1' > 5}`) //false
+console.log(`5 < '10' || '1' > 5 is ${5 < '10' || '1' > 5}`) //true
+
+let count = 0
+count++ //+1
+count-- //-1
+count += 5 //+5
+count *= 50 //*50
+count /= 2 // div 2
+console.log(`count = ${count}`)
