@@ -86,13 +86,17 @@ isEmpty = false
 let x = isEmpty? 1 /*true*/ : 0 /*false*/
 console.log(x)
 
-console.log('----------')
 isEmpty = true
 let y = isEmpty? 1 /*true*/ : 0 /*false*/
 console.log(y)
 
 let result = 5 ? 'count <= 5' : 'count > 5'
 console.log(result)
+
+let age = 65
+const greeting = age >= 60 ? 'Welcome!' : 'You are too young!'
+console.log(greeting)
+console.log('----------')
 
 console.log(`5 < '10' && '1' > 5 is ${5 < '10' && '1' > 5}`) //false
 console.log(`5 < '10' || '1' > 5 is ${5 < '10' || '1' > 5}`) //true
@@ -104,3 +108,9 @@ count += 5 //+5
 count *= 50 //*50
 count /= 2 // div 2
 console.log(`count = ${count}`)
+
+console.log('----------')
+let student={firstname: 'Purin', Age: 19}
+let id
+console.log(id?.Age)
+console.log(student)
