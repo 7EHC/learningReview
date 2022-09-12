@@ -2,9 +2,9 @@ let i=1
 console.log(i)
 
 //String ไม่สามารถเปลี่ยนค่าข้างในตัวแปลได้ ต้องทำการ re assign กลับมาให้ String ตัวที่เราสร้างก่อน (เรียกว่า immutable obj)
-let str='PURIN'
-str=str.toLowerCase()
-console.log(str)
+// let str='PURIN'
+// str=str.toLowerCase()
+// console.log(str)
 
 //obj properties และ array elements สามารถเปลี่ยนค่าข้างในตัวแปลได้เลย (เรียกว่า mutable obj)
 let perInfo={Firstname: 'Prayfa', Lastname: 'Peerachotikaphan', Year: 2002, Age: 20} //obj properties
@@ -114,3 +114,29 @@ let student={firstname: 'Purin', Age: 19}
 let id
 console.log(id?.Age)
 console.log(student)
+
+console.log('----------')
+//nullish coalescing
+//เช็คค่าของตัวแปล ว่ามีค่ามั้ย ถ้ามี(true)จะได้เป็นค่าของ arr ถ้าไม่มี(null/undefined = false)จะได้เป็น []
+let arr
+arr = arr??[]
+console.log(arr)
+
+//array (for...of)
+const names = ['Shell', 'Kaopun']
+for (const name of names) {
+    console.log(name)
+}
+console.log('----------')
+//string (for...of)
+const str = 'Purin'
+for ( y of str) {
+    console.log(y)
+}
+console.log('----------')
+//object (for...in)
+const info = {Name: 'Kaopun', age: 20, id: 64120500907}
+for (const prop in info) {
+    console.log(prop) //อ้างถึง property key
+    console.log(info[prop]) //อ้างถึง property value
+}
